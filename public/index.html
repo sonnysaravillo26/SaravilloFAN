@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saravillo Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fortawesome/all.min.css">
+    <link rel="stylesheet" href="style/custom.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script defer src="fortawesome/all.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <!-- <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>SONNY SARAVILLO</h1>
+            <h3>Medavie Blue Cross</h3>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-8 col-lg-8">
+                <h2>
+                    The Ceiling Fan
+                </h2>
+                <small>Description</small>
+                <ul>
+                    <li>
+                        Two button Switch (Reverse and Speed).
+                    </li>
+                    <li>
+                        Speed button, increases speed every time the button pressed.
+                        If the button is pressed more than 3x (Max Level of Speed is 3), the fan returns to the “off” or Speed "0" setting.
+                    </li>
+                    <li>
+                        Reverse button, changing the direction of the fan at the current speed setting. Once the
+                        direction has been reversed, it remains reversed as the cycle through the speed settings.
+                    </li>
+                    <li>
+                        Default fan speed is "1" and Rotation Type is "Normal".
+                    </li>
+                </ul>
+
+                <hr>
+            </div>
+
+            <div class="col-xs-8 col-sm-4 col-lg-4 fanSection">
+
+                <div class="fanRound">
+                    <span class="spin"><i id="idfan" class="fas fa-fan"></i></span>
+                </div>
+
+                <h4>CONTROLS</h4>
+                <form>
+                    <div class="form-row">  
+                        <div class="form-group col-md-6">
+                            <label for="idrotationType">Rotation Type:</label>
+                            <select type="text" id="idrotationType" class="form-control" disabled>
+                                <option value="normal">normal</option>
+                                <option value="reverse">reverse</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="idspeedNumber">Speed No.:</label>
+                            <input type="number" id="idspeedNumber" class="form-control" value="" disabled>
+                        </div> 
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button onclick="fnreverse()" type="button" class="btn btn-info btn-block">Reverse</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button onclick="fnspeed()" type="button" class="btn btn-primary btn-block">Speed</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

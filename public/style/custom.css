@@ -1,0 +1,66 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.spin {
+  font-size: 10em;
+  color:grey;
+}
+
+.fanSection {
+  background-color:#bee5ff;
+  border-radius: 10px 10px 10px 10px;
+  border:1px solid;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.fanRound {
+  border-radius: 50% 50%;
+  background-color: rgb(243, 243, 243); 
+}
+ 
+select[disabled] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+   
+/* ANIMATION SPIN */ 
+.spinanimation {
+  -webkit-animation-name: fa-spin;
+  -webkit-animation-duration: 0ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-animation-direction: normal;
+  animation-name: fa-spin;
+  animation-duration: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-timing-function: ease-in-out; 
+  animation-direction: Normal;
+}
+
+
+#idfan {
+  animation-name: fa-spin;
+  animation-duration: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-timing-function: ease-in-out; 
+  animation-direction: Normal;
+  color:black;
+}
+  
